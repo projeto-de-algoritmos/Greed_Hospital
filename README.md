@@ -11,22 +11,18 @@
 
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+
+O Hospital é composto do horario de varios medicos em um dia. Esse software adiciona pacientes para cirurgias e especialidades e utiliza de um algoritmo ambisioso para decidir a pior ordem de cirurgias possiveis. Levando em conta sempre a prioridade e especialidade que o paciente precisa.
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+**Linguagem**: JavaScript<br>
+É preciso um navegador com capacidade de renderizar html com script.
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+Abra o arquivo `hospital.html` no navegador e divirta-se.
 
 ## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
-
-
-
-
+Em caso da pagina ser atualizada será perdido todos os valores. 
