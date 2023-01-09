@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta nome="viewport" content="width=device-width, initial-scale=1">
+        <title>Hospital</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script>
+            window.onload = event => {
+                onLoad();};
+        </script>
+        <!-- Medico -->
+        <div id="medicos-div">
+            <h1 id="medico-title">Médicos</h1>
+            <table id="medico-table">
+                <tr>
+                    <th>Médico</th>
+                    <th>Especialidade</th>
+                    <th>00:00</th>
+                    <th>02:00</th>
+                    <th>04:00</th>
+                    <th>06:00</th>
+                    <th>08:00</th>
+                    <th>10:00</th>
+                    <th>12:00</th>
+                    <th>14:00</th>
+                    <th>16:00</th>
+                    <th>18:00</th>
+                    <th>20:00</th>
+                    <th>22:00</th>
+                </tr>
+              </table>
+        </div>
+        <!-- Cirurgia -->
+        <div id="cirurgia-div">
+            <h1 id="cirurgia-title">Cirurgia</h1>
+            <h2 id="cirurgia-cadastrar">Cadastrar cirurgia</h2>
+            <form>
+                <label for="fpaciente">Paciente:</label>
+                <input type="text" id="fpaciente" nome="fpaciente"><br><br>
+                <label for="fespecialidade">Especialidade:</label>
+                <select id="fespecialidade" name="fespecialidade">
+                </select><br><br>
+                <label for="fprioridade">Prioridade:</label>
+                <select id="fprioridade" name="fprioridade">
+                    <option value="-1">baixa</option>
+                    <option value="0">média</option>
+                    <option value="1">alta</option>
+                </select><br><br>
+                <button type='button' onclick="addCirurgia()">Adicionar cirurgia</button> <br><br>
+            </form>
+            <h2 id="cirurgia-cadastrada">Cirurgias cadastradas</h1>
+                <table id="cirurgia-table">
+                    <tr>
+                        <th>Paciente</th>
+                        <th>Especialidade</th>
+                        <th>Prioridade</th>
+                    </tr>
+                  </table>
+            <button type='button' onclick="criaAgenda()">Calcular horario</button> <br><br>
+        </div>
+        <!-- Horarios -->
+        <div id="horarios-div" hidden>
+            <h1 id="horario-title">Horarios</h1>
+            <table id="horario-table">
+                <tr>
+                    <th>Médico</th>
+                    <th>00:00</th>
+                    <th>02:00</th>
+                    <th>04:00</th>
+                    <th>06:00</th>
+                    <th>08:00</th>
+                    <th>10:00</th>
+                    <th>12:00</th>
+                    <th>14:00</th>
+                    <th>16:00</th>
+                    <th>18:00</th>
+                    <th>20:00</th>
+                    <th>22:00</th>
+                </tr>
+              </table>
+        </div>
+    </body>
+</html>
