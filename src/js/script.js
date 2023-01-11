@@ -108,8 +108,20 @@ function addCirurgia(){
 
         }
 }
+function sortPorPrioridade(){
+    cirurgia.sort(function(a,b){
+        var x = a["prioridade"];
+        var y = b["prioridade"];
+        return((x<y)? -1 : ((x>y)? 1 : 0));
+    });
+}
 
 function criaAgenda(){
+    sortPorPrioridade();
+    cirurgia.forEach((element) =>{
+        
+    }       //pra cada cirurgia, cola na agenda se tive livre, do medico que é especialista
+    )
     document.getElementById("horarios-div").removeAttribute("hidden");
     document.getElementById("medicos-div").setAttribute("hidden", "hidden");
     document.getElementById("cirurgia-div").setAttribute("hidden", "hidden");
