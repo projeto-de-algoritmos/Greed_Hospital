@@ -115,13 +115,36 @@ function sortPorPrioridade(){
         return((x<y)? -1 : ((x>y)? 1 : 0));
     });
 }
-
+function sortPorHorario(){
+    medicos.sort(function(a,b){
+        var x = a["horario"];
+        var y = b["horario"];
+        for(i =0; i<12; i++){
+            return((x[i]>y[i])? -1 : (x[i]<y[i])? 1 : 0 );
+        }
+    })
+}
 function criaAgenda(){
     sortPorPrioridade();
-    cirurgia.forEach((element) =>{
-        
-    }       //pra cada cirurgia, cola na agenda se tive livre, do medico que é especialista
-    )
+    sortPorHorario();
+
+    var controle = false;
+
+    var table  = document.getElementById("horario-table");
+    cirurgia.forEach((marcacao) =>{
+        medicos.forEach((doutor) =>{
+            if(marcacao.especialidade == doutor.especialidade && controle == false){
+                doutor.horario.forEach((hora, j) =>{
+                    if(hora == 1  && controle == false){
+                        doutor.horario[j] = marcacao.paciente;
+                        controle = true;
+                    }
+                });
+            }
+        });
+        controle = false;
+    });
+    console.log(medicos);
     document.getElementById("horarios-div").removeAttribute("hidden");
     document.getElementById("medicos-div").setAttribute("hidden", "hidden");
     document.getElementById("cirurgia-div").setAttribute("hidden", "hidden");
