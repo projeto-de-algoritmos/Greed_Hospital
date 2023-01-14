@@ -12,7 +12,7 @@
 
 ## Sobre 
 
-O Hospital é composto do horario de varios medicos em um dia. Esse software adiciona pacientes para cirurgias em especialidades e utiliza de um algoritmo ambisioso de particição por intervalos decidir a ordem de cirurgias. Levando em conta sempre a prioridade e especialidade que o paciente precisa.
+O Hospital é composto do horario de varios medicos em um dia. Esse software adiciona pacientes para cirurgias em especialidades e utiliza de um algoritmo ambisioso de particição por intervalos para decidir a ordem de cirurgias. Levando em conta sempre a prioridade e especialidade que o paciente precisa.
 
 ## Screenshots
 ![image](https://user-images.githubusercontent.com/31159235/212476649-b605568a-ac42-445d-9aad-e4f90018727d.png)
